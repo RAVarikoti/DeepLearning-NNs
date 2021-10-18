@@ -54,7 +54,10 @@ ann.add(tf.keras.layers.Dense(units=1, activation='sigmoid')) # output layer ---
 
 # compiling the ANN
 
-ann.compile(optimizer = 'adam', loss = 'binary_crossentropy' , metrics= ['accuracy']) # optimizer updates the weights through Stochastic gradi optimizer, loss --> categorical
+ann.compile(optimizer = 'adam', loss = 'binary_crossentropy' , metrics= ['accuracy']) 
+# optimizer updates the weights through Stochastic gradi optimizer, loss --> categorical
+# binary_crossentropy: Computes the cross-entropy loss between true labels and predicted labels.
+
 
 # training the ANN on training set
 
